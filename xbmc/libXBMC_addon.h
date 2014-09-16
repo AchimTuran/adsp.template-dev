@@ -268,7 +268,7 @@ namespace ADDON
       char buffer[16384];
       va_list args;
       va_start (args, format);
-      vsprintf (buffer, format, args);
+	  vsprintf_s (buffer, 16384, format, args);
       va_end (args);
       return XBMC_log(m_Handle, m_Callbacks, loglevel, buffer);
     }
@@ -294,7 +294,7 @@ namespace ADDON
       char buffer[16384];
       va_list args;
       va_start (args, format);
-      vsprintf (buffer, format, args);
+	  vsprintf_s(buffer, 16384, format, args);
       va_end (args);
       return XBMC_queue_notification(m_Handle, m_Callbacks, type, buffer);
     }
