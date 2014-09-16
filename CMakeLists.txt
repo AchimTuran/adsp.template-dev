@@ -36,6 +36,8 @@ set(TEMPLATE_SOURCES src/channelUpmixer.cpp
                      src/template/configuration/templateConfiguration.cpp
                      src/template/ADSPAddonHandler.cpp)
 
+set(DEPLIBS ${xbmcplatform_LIBRARIES})
+					 
 #set(DEPLIBS ${xbmcplatform_LIBRARIES}
 #            ${FFTW3_LIBRARIES}
 #            ${SAMPLERATE_LIBRARIES})
