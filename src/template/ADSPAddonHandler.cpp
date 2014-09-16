@@ -86,7 +86,7 @@ bool CADSPAddonHandler::Init()
 	{
 		modeSettings.iUniqueDBModeId = adspPreUniqueDbId[ii];
 		modeSettings.iModeType = AE_DSP_MODE_TYPE_PRE_PROCESS;
-		strcpy(modeSettings.strModeName, adspPreStrNames[ii]);
+		strcpy_s(modeSettings.strModeName, AE_DSP_ADDON_STRING_LENGTH, adspPreStrNames[ii]);
 
 		modeSettings.iModeNumber = adspPreModeNum[ii];
 		modeSettings.iModeSupportTypeFlags = adspPreTypeFlags[ii];
@@ -98,8 +98,8 @@ bool CADSPAddonHandler::Init()
 		modeSettings.iModeDescription = adspPreDescription[ii];
 		modeSettings.iModeHelp = adspPreHelp[ii];
 
-		strcpy(modeSettings.strOwnModeImage, adspPreOwnImage[ii]);
-		strcpy(modeSettings.strOverrideModeImage, "");//adspPreOverrideImage[ii]);
+		strcpy_s(modeSettings.strOwnModeImage, AE_DSP_ADDON_STRING_LENGTH, adspPreOwnImage[ii]);
+		strcpy_s(modeSettings.strOverrideModeImage, AE_DSP_ADDON_STRING_LENGTH, "");//adspPreOverrideImage[ii]);
 
 		ADSP->RegisterMode(&modeSettings);
 	}
@@ -110,7 +110,7 @@ bool CADSPAddonHandler::Init()
 	{
 		modeSettings.iUniqueDBModeId = adspMaUniqueDdId[ii];
 		modeSettings.iModeType = AE_DSP_MODE_TYPE_MASTER_PROCESS;
-		strcpy(modeSettings.strModeName, adspMaStrNames[ii]);
+		strcpy_s(modeSettings.strModeName, AE_DSP_ADDON_STRING_LENGTH, adspMaStrNames[ii]);
 
 		modeSettings.iModeNumber = adspMaModeNum[ii];
 		modeSettings.iModeSupportTypeFlags = adspMaTypeFlags[ii];
@@ -122,8 +122,8 @@ bool CADSPAddonHandler::Init()
 		modeSettings.iModeDescription = adspMaDescription[ii];
 		modeSettings.iModeHelp = adspMaHelp[ii];
 
-		strcpy(modeSettings.strOwnModeImage, adspMaOwnImage[ii]);
-		strcpy(modeSettings.strOverrideModeImage, adspMaOverrideImage[ii]);
+		strcpy_s(modeSettings.strOwnModeImage, AE_DSP_ADDON_STRING_LENGTH, adspMaOwnImage[ii]);
+		strcpy_s(modeSettings.strOverrideModeImage, AE_DSP_ADDON_STRING_LENGTH, adspMaOverrideImage[ii]);
 
 		ADSP->RegisterMode(&modeSettings);
 	}
@@ -134,7 +134,7 @@ bool CADSPAddonHandler::Init()
 	{
 		modeSettings.iUniqueDBModeId = adspPostUniqueDbId[ii];
 		modeSettings.iModeType = AE_DSP_MODE_TYPE_POST_PROCESS;
-		strcpy(modeSettings.strModeName, adspPostStrNames[ii]);
+		strcpy_s(modeSettings.strModeName, AE_DSP_ADDON_STRING_LENGTH, adspPostStrNames[ii]);
 
 		modeSettings.iModeNumber = adspPostModeNum[ii];
 		modeSettings.iModeSupportTypeFlags = adspPostTypeFlags[ii];
@@ -146,8 +146,8 @@ bool CADSPAddonHandler::Init()
 		modeSettings.iModeDescription = adspPostDescription[ii];
 		modeSettings.iModeHelp = adspPostHelp[ii];
 
-		strcpy(modeSettings.strOwnModeImage, adspPostOwnImage[ii]);
-		strcpy(modeSettings.strOverrideModeImage, "");//adspPostOverrideImage[ii]);
+		strcpy_s(modeSettings.strOwnModeImage, AE_DSP_ADDON_STRING_LENGTH, adspPostOwnImage[ii]);
+		strcpy_s(modeSettings.strOverrideModeImage, AE_DSP_ADDON_STRING_LENGTH, "");//adspPostOverrideImage[ii]);
 
 		ADSP->RegisterMode(&modeSettings);
 	}
@@ -158,7 +158,7 @@ bool CADSPAddonHandler::Init()
 	//{
 		modeSettings.iUniqueDBModeId = adspOutResampleUniqueDdId;
 		modeSettings.iModeType = AE_DSP_MODE_TYPE_OUTPUT_RESAMPLE;
-		strcpy(modeSettings.strModeName, adspOutResampleStrNames);
+		strcpy_s(modeSettings.strModeName, AE_DSP_ADDON_STRING_LENGTH, adspOutResampleStrNames);
 
 		//modeSettings.iModeNumber = adspOutResampleModeNum;
 		modeSettings.iModeSupportTypeFlags = adspOutResampleTypeFlags;
@@ -170,8 +170,8 @@ bool CADSPAddonHandler::Init()
 		modeSettings.iModeDescription = adspOutResampleDescription;
 		modeSettings.iModeHelp = adspOutResampleHelp;
 
-		strcpy(modeSettings.strOwnModeImage, adspOutResampleOwnImage);
-		strcpy(modeSettings.strOverrideModeImage, "");//adspOutResampleOverrideImage[ii]);
+		strcpy_s(modeSettings.strOwnModeImage, AE_DSP_ADDON_STRING_LENGTH, adspOutResampleOwnImage);
+		strcpy_s(modeSettings.strOverrideModeImage, AE_DSP_ADDON_STRING_LENGTH, "");//adspOutResampleOverrideImage[ii]);
 
 		ADSP->RegisterMode(&modeSettings);
 	//}
