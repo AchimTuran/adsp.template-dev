@@ -11,10 +11,14 @@ enable_language(CXX)
 #find_package(SampleRate REQUIRED)
 #find_package(FFTW3 REQUIRED)
 
+#include_directories(${xbmcplatform_INCLUDE_DIRS}
+#                    ${XBMC_INCLUDE_DIR}
+#                    ${FFTW3_INCLUDE_DIRS}
+#                    ${SAMPLERATE_INCLUDE_DIRS}
+#                    ${PROJECT_SOURCE_DIR}/src)
+					
 include_directories(${xbmcplatform_INCLUDE_DIRS}
                     ${XBMC_INCLUDE_DIR}
-                    ${FFTW3_INCLUDE_DIRS}
-                    ${SAMPLERATE_INCLUDE_DIRS}
                     ${PROJECT_SOURCE_DIR}/src)
 
 set(TEMPLATE_SOURCES src/channelUpmixer.cpp
