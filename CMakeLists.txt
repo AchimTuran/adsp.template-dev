@@ -7,7 +7,7 @@ list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 enable_language(CXX)
 
 find_package(xbmc REQUIRED)
-find_package(xbmcplatform REQUIRED)
+#find_package(xbmcplatform REQUIRED)
 #find_package(SampleRate REQUIRED)
 #find_package(FFTW3 REQUIRED)
 
@@ -17,8 +17,7 @@ find_package(xbmcplatform REQUIRED)
 #                    ${SAMPLERATE_INCLUDE_DIRS}
 #                    ${PROJECT_SOURCE_DIR}/src)
 					
-include_directories(${xbmcplatform_INCLUDE_DIRS}
-                    ${XBMC_INCLUDE_DIR}
+include_directories(${XBMC_INCLUDE_DIR}
                     ${PROJECT_SOURCE_DIR}/src)
 
 set(TEMPLATE_SOURCES src/channelUpmixer.cpp
@@ -34,9 +33,10 @@ set(TEMPLATE_SOURCES src/channelUpmixer.cpp
                      src/template/ADSPProcessorHandle.cpp
                      src/template/IADDONOptional.cpp
                      src/template/configuration/templateConfiguration.cpp
-                     src/template/ADSPAddonHandler.cpp)
+                     src/template/ADSPAddonHandler.cpp
+					 src/platform/windows/dlfcn-win32.cpp)
 
-set(DEPLIBS ${xbmcplatform_LIBRARIES})
+set(DEPLIBS)
 					 
 #set(DEPLIBS ${xbmcplatform_LIBRARIES}
 #            ${FFTW3_LIBRARIES}
