@@ -19,7 +19,7 @@
  *
  */
 #include "configuration/templateConfiguration.h"
-#include "template/include/MACROHelper.h"
+#include "../template/include/MACROHelper.h"
 #include "include/checkTemplateConfig.h"
 
 #include <vector>
@@ -27,11 +27,11 @@
 #include "include/client.h"
 #include "xbmc_adsp_dll.h"
 #include "platform/util/util.h"
-#include "platform/util/StdString.h"
+//#include "platform/util/StdString.h"
 
 // include adsp template specific header files
-#include "template/include/ADSPProcessorHandle.h"
-#include "template/include/ADSPAddonHandler.h"
+#include "include/ADSPProcessorHandle.h"
+#include "include/ADSPAddonHandler.h"
 // includes your DSP Processor class
 #include ADSP_PROCESSOR_HEADER_FILE
 

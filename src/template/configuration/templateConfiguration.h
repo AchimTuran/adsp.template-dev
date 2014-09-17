@@ -25,7 +25,7 @@
  * \file templateConfiguration.h
  * ToDo: detailed description!
  */
-#include "template/include/typedefs.h"
+#include "../include/typedefs.h"
 
 //! Here you mus define the name of your processing class.
 #define ADSP_PROCESSOR_CLASS_NAME		CDSPProcessor

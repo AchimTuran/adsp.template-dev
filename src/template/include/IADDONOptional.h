@@ -21,7 +21,7 @@
 
 #include "client.h"
 #include <string>
-#include "template/configuration/templateConfiguration.h"
+#include "../configuration/templateConfiguration.h"
 
 class IADDONOptional
 {

@@ -21,6 +21,7 @@
 
 #include "xbmc_adsp_types.h"
 #include "../configuration/templateConfiguration.h"
+#include "include/MACROHelper.h"
 #include ADSP_PROCESSOR_HEADER_FILE
 
 class CADSPProcessorHandle : public ADSP_PROCESSOR_CLASS_NAME

@@ -24,9 +24,9 @@
  *  http://www.gnu.org/copyleft/gpl.html
  *
  */
-#include "template/include/typedefs.h"
-#include "template/include/client.h"
-#include "template/configuration/templateConfiguration.h"
+#include "../include/typedefs.h"
+#include "../include/client.h"
+#include "../configuration/templateConfiguration.h"
 
 // configuration for input resample
 ADSP_INRESMOD_UNIQUEDBID adspInResampleUniqueDdId = -1;

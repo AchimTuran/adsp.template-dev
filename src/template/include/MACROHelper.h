@@ -19,8 +19,8 @@
  *
  */
 #include "client.h"
-#include "template/include/typedefs.h"
-#include "template/configuration/templateConfiguration.h"
+#include "typedefs.h"
+#include "../configuration/templateConfiguration.h"
 
 #define USE_ADDONOPTIONAL	defined(ADSP_ADDON_USE_SETTINGS) || defined(ADSP_ADDON_USE_READSETTINGS) || \
 							defined(ADSP_ADDON_USE_GETSETTINGS) || defined(ADSP_ADDON_USE_STOP) || \
@@ -28,6 +28,9 @@
 							defined(ADSP_ADDON_USE_MENUHOOK)
 
 #define SIZE_OF_ARRAY(X, Y) sizeof(X)/sizeof(Y)
+
+#define STRINGIFY_(x) #x
+#define STRINGIFY(x) STRINGIFY_(x)
 
 #ifdef ADSP_ADDON_USE_INPUTRESAMPLE
 	extern ADSP_INRESMOD_UNIQUEDBID adspInResampleUniqueDdId;
