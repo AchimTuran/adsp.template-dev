@@ -36,8 +36,6 @@ set(TEMPLATE_SOURCES src/channelUpmixer.cpp
                      src/template/ADSPAddonHandler.cpp
 					 src/platform/windows/dlfcn-win32.cpp)
 
-set(DEPLIBS)
-					 
 #set(DEPLIBS ${xbmcplatform_LIBRARIES}
 #            ${FFTW3_LIBRARIES}
 #            ${SAMPLERATE_LIBRARIES})
