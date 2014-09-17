@@ -1,1 +1,12 @@
 temp/
+Debug/
+*.opensdf
+*.sdf
+*.sln
+*.suo
+*.vcxproj
+*.filters
+*.lib
+*.pdb
+*.exp
+*.ilk
