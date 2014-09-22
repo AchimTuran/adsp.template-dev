@@ -19,7 +19,8 @@ find_package(xbmc REQUIRED)
 					
 include_directories(${XBMC_INCLUDE_DIR}
                     ${PROJECT_SOURCE_DIR}/src)
-
+message(STATUS ${XBMC_INCLUDE_DIR})
+					
 set(TEMPLATE_SOURCES src/channelUpmixer.cpp
                      src/DSPProcessor.cpp
                      src/Dialogs/GUIDialogMasterProcess.cpp
