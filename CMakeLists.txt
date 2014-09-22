@@ -19,7 +19,8 @@ find_package(xbmc REQUIRED)
 					
 include_directories(${XBMC_INCLUDE_DIR}
 					${XBMC_INCLUDE_DIR}/xbmc
-                    ${PROJECT_SOURCE_DIR}/src)
+                    ${PROJECT_SOURCE_DIR}/src
+					${PROJECT_SOURCE_DIR}/src/platform/windows)
 message("Test message start!")
 message(STATUS ${XBMC_INCLUDE_DIR})
 message("Test message end!")
