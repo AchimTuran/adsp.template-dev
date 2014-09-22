@@ -18,9 +18,11 @@ find_package(xbmc REQUIRED)
 #                    ${PROJECT_SOURCE_DIR}/src)
 					
 include_directories(${XBMC_INCLUDE_DIR}
+					${XBMC_INCLUDE_DIR}/xbmc
                     ${PROJECT_SOURCE_DIR}/src)
-message("Test Message!")
+message("Test message start!")
 message(STATUS ${XBMC_INCLUDE_DIR})
+message("Test message end!")
 					
 set(TEMPLATE_SOURCES src/channelUpmixer.cpp
                      src/DSPProcessor.cpp
