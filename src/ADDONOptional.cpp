@@ -144,7 +144,7 @@ bool CADDONOptional::OptionalInit()
 
 	// register menu hook for the master process
 	hook.iHookId            = ID_MENU_MASTER_PROCESS;
-	hook.category           = AE_DSP_MENUHOOK_PRE_PROCESS;
+	hook.category           = AE_DSP_MENUHOOK_MASTER_PROCESS;
     hook.iLocalizedStringId = 30022;
     hook.iRelevantModeId    = MA_MODE1_ID;
     ADSP->AddMenuHook(&hook);
