@@ -26,8 +26,7 @@
 #include <string>
 #include "include/client.h"
 #include "xbmc_adsp_dll.h"
-#include "platform/util/util.h"
-//#include "platform/util/StdString.h"
+#include "util/util.h"
 
 // include adsp template specific header files
 #include "include/ADSPProcessorHandle.h"

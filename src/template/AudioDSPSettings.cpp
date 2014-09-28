@@ -23,9 +23,9 @@
 #include "libXBMC_adsp.h"
 #include "libXBMC_gui.h"
 
-#include "tinyxml/XMLUtils.h"
-#include "platform/util/util.h"
-#include "platform/util/StdString.h"
+#include "util/XMLUtils.h"
+#include "util/util.h"
+#include "util/StdString.h"
 
 #include "AudioDSPSettings.h"
 #include "GUIDialogSpeakerGain.h"
