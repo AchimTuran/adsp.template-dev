@@ -36,7 +36,7 @@
 	extern ADSP_INRESMOD_UNIQUEDBID adspInResampleUniqueDdId;
 	extern ADSP_INRESMOD_STR_NAMES adspInResampleStrNames[AE_DSP_ADDON_STRING_LENGTH];
 
-	//extern ADSP_INRESMOD_MODE_NUM adspInResampleModeNum;
+	extern ADSP_INRESMOD_MODE_NUM adspInResampleModeNum;
 	extern ADSP_INRESMOD_TYPE_FLAGS adspInResampleTypeFlags;
 	extern ADSP_INRESMOD_SETTINGS_DIALOG adspInResampleSettings;
 	extern ADSP_INRESMOD_DISABLED adspInResampleDisabled;
@@ -110,7 +110,7 @@
 	extern ADSP_OUTRESMOD_UNIQUEDBID adspOutResampleUniqueDdId;
 	extern ADSP_OUTRESMOD_STR_NAMES adspOutResampleStrNames[AE_DSP_ADDON_STRING_LENGTH];
 
-	//extern ADSP_OUTRESMOD_MODE_NUM adspOutResampleModeNum;
+	extern ADSP_OUTRESMOD_MODE_NUM adspOutResampleModeNum;
 	extern ADSP_OUTRESMOD_TYPE_FLAGS adspOutResampleTypeFlags;
 	extern ADSP_OUTRESMOD_SETTINGS_DIALOG adspOutResampleSettings;
 	extern ADS_OUTRESMOD_DISABLED adspOutResampleDisabled;

@@ -64,7 +64,7 @@ bool CADSPAddonHandler::Init()
 		modeSettings.iModeType = AE_DSP_MODE_TYPE_INPUT_RESAMPLE;
 		strcpy(modeSettings.strModeName, adspInResampleStrNames);
 
-		//modeSettings.iModeNumber = adspInResampleModeNum;
+		modeSettings.iModeNumber = adspInResampleModeNum;
 		modeSettings.iModeSupportTypeFlags = adspInResampleTypeFlags;
 		modeSettings.bHasSettingsDialog = adspInResampleSettings;
 		modeSettings.bIsDisabled = adspInResampleDisabled;
@@ -160,7 +160,7 @@ bool CADSPAddonHandler::Init()
 		modeSettings.iModeType = AE_DSP_MODE_TYPE_OUTPUT_RESAMPLE;
 		strcpy_s(modeSettings.strModeName, AE_DSP_ADDON_STRING_LENGTH, adspOutResampleStrNames);
 
-		//modeSettings.iModeNumber = adspOutResampleModeNum;
+		modeSettings.iModeNumber = adspOutResampleModeNum;
 		modeSettings.iModeSupportTypeFlags = adspOutResampleTypeFlags;
 		modeSettings.bHasSettingsDialog = adspOutResampleSettings;
 		modeSettings.bIsDisabled = adspOutResampleDisabled;

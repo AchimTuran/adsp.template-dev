@@ -144,7 +144,8 @@ typedef enum
 	PRE_MODE1_ID=0,				/*!< @brief Example mode id for preprocessing mode. */
 	MA_MODE1_ID,				/*!< @brief Example mode id for masterprocess mode. */
 	POST_MODE1_ID,				/*!< @brief Example mode id for preprocessing mode. */
-	OUTPUT_RESAMPLE_ID
+	INPUT_RESAMPLE_MODE_ID,
+	OUTPUT_RESAMPLE_MODE_ID
 }adspProcessingModeIDs;
 
 typedef enum 
@@ -152,5 +153,6 @@ typedef enum
 	ID_MENU_PRE_PROCESS = 0,
 	ID_MENU_MASTER_PROCESS,
 	ID_MENU_POST_PROCESS,
+	ID_MENU_INPUT_RESAMPLE_PROCESS,
 	ID_MENU_OUTPUT_RESAMPLE_PROCESS
 }adspMENUIDs;

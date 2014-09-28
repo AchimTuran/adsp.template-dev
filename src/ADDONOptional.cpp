@@ -160,7 +160,7 @@ bool CADDONOptional::OptionalInit()
 	hook.iHookId            = ID_MENU_PRE_PROCESS;
 	hook.category           = AE_DSP_MENUHOOK_RESAMPLE;
     hook.iLocalizedStringId = 30024;
-    hook.iRelevantModeId    = OUTPUT_RESAMPLE_ID;
+    hook.iRelevantModeId    = OUTPUT_RESAMPLE_MODE_ID;
     ADSP->AddMenuHook(&hook);
 
 	return true;
