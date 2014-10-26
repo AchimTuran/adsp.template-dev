@@ -8,8 +8,6 @@ enable_language(CXX)
 
 find_package(xbmc REQUIRED)
 find_package(xbmcplatform REQUIRED)
-#find_package(SampleRate REQUIRED)
-#find_package(FFTW3 REQUIRED)
 
 include_directories(${xbmcplatform_INCLUDE_DIRS}
                     ${PROJECT_SOURCE_DIR}/src)
