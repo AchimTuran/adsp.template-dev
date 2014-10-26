@@ -27,6 +27,10 @@
 #include "../include/typedefs.h"
 #include "../include/client.h"
 #include "../configuration/templateConfiguration.h"
+#include <string>
+
+// image user path
+std::string adspImageUserPath = "";
 
 // configuration for input resample
 ADSP_INRESMOD_UNIQUEDBID adspInResampleUniqueDdId = -1;
@@ -78,8 +82,8 @@ ADSP_MAMOD_SETUP_NAME adspMaSetupName[ADSP_MAX_MASTER_MODES] = {30009};
 ADSP_MAMOD_DESCRIPTION adspMaDescription[ADSP_MAX_MASTER_MODES] = {30010};
 ADSP_MAMOD_HELP adspMaHelp[ADSP_MAX_MASTER_MODES] = {30011};
 
-ADSP_MAMOD_OWN_IMAGE adspMaOwnImage[ADSP_MAX_MASTER_MODES][AE_DSP_ADDON_STRING_LENGTH] = {"img1.jpg"};
-ADSP_MAMOD_OVERRIDE_IMAGE adspMaOverrideImage[ADSP_MAX_MASTER_MODES][AE_DSP_ADDON_STRING_LENGTH] = {"img1.jpg"};
+ADSP_MAMOD_OWN_IMAGE adspMaOwnImage[ADSP_MAX_MASTER_MODES][AE_DSP_ADDON_STRING_LENGTH] = {"kodi audioDSP template_master.png"};
+ADSP_MAMOD_OVERRIDE_IMAGE adspMaOverrideImage[ADSP_MAX_MASTER_MODES][AE_DSP_ADDON_STRING_LENGTH] = {"kodi audioDSP template.png"};
 
 
 // configuration for postprocess modes

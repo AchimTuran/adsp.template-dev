@@ -29,6 +29,8 @@
 using namespace std;
 using namespace ADDON;
 
+extern std::string adspImageUserPath;
+
 
 //Helper function prototypes
 string GetSettingsFile();
@@ -56,6 +58,8 @@ CADSPAddonHandler::~CADSPAddonHandler()
 bool CADSPAddonHandler::Init()
 {
 	AE_DSP_MODES::AE_DSP_MODE modeSettings;
+	string imagePath = g_strUserPath + "\\" + adspImageUserPath + "\\";
+	string temp;
 
 #ifdef ADSP_ADDON_USE_INPUTRESAMPLE
 	//for(unsigned int ii = 0; ii < ADSP_MAX_INRES_MODES; ii++)
@@ -74,7 +78,8 @@ bool CADSPAddonHandler::Init()
 		modeSettings.iModeDescription = adspInResampleDescription;
 		modeSettings.iModeHelp = adspInResampleHelp;
 
-		strcpy(modeSettings.strOwnModeImage, adspInResampleOwnImage);
+		temp = imagePath + adspInResampleOwnImage;
+		strcpy(modeSettings.strOwnModeImage, temp.c_str());
 		strcpy(modeSettings.strOverrideModeImage, "");//adspInResampleOverrideImage[ii]);
 
 		ADSP->RegisterMode(&modeSettings);
@@ -98,7 +103,8 @@ bool CADSPAddonHandler::Init()
 		modeSettings.iModeDescription = adspPreDescription[ii];
 		modeSettings.iModeHelp = adspPreHelp[ii];
 
-		strcpy_s(modeSettings.strOwnModeImage, AE_DSP_ADDON_STRING_LENGTH, adspPreOwnImage[ii]);
+		temp = imagePath + adspPreOwnImage[ii];
+		strcpy_s(modeSettings.strOwnModeImage, AE_DSP_ADDON_STRING_LENGTH, temp.c_str());
 		strcpy_s(modeSettings.strOverrideModeImage, AE_DSP_ADDON_STRING_LENGTH, "");//adspPreOverrideImage[ii]);
 
 		ADSP->RegisterMode(&modeSettings);
@@ -122,8 +128,10 @@ bool CADSPAddonHandler::Init()
 		modeSettings.iModeDescription = adspMaDescription[ii];
 		modeSettings.iModeHelp = adspMaHelp[ii];
 
-		strcpy_s(modeSettings.strOwnModeImage, AE_DSP_ADDON_STRING_LENGTH, adspMaOwnImage[ii]);
-		strcpy_s(modeSettings.strOverrideModeImage, AE_DSP_ADDON_STRING_LENGTH, adspMaOverrideImage[ii]);
+		temp = imagePath + adspMaOwnImage[ii];
+		strcpy_s(modeSettings.strOwnModeImage, AE_DSP_ADDON_STRING_LENGTH, temp.c_str());
+		temp = imagePath + adspMaOverrideImage[ii];
+		strcpy_s(modeSettings.strOverrideModeImage, AE_DSP_ADDON_STRING_LENGTH, temp.c_str());
 
 		ADSP->RegisterMode(&modeSettings);
 	}
