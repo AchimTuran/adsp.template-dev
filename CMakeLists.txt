@@ -9,7 +9,7 @@ enable_language(CXX)
 find_package(xbmc REQUIRED)
 find_package(xbmcplatform REQUIRED)
 
-include_directories(${xbmcplatform_INCLUDE_DIRS}
+include_directories(${kodiplatform_INCLUDE_DIRS}
                     ${PROJECT_SOURCE_DIR}/src)
 
 set(TEMPLATE_SOURCES src/channelUpmixer.cpp
@@ -27,7 +27,7 @@ set(TEMPLATE_SOURCES src/channelUpmixer.cpp
                      src/template/configuration/templateConfiguration.cpp
                      src/template/ADSPAddonHandler.cpp)
 
-set(DEPLIBS ${xbmcplatform_LIBRARIES})
+set(DEPLIBS ${kodiplatform_LIBRARIES})
 
 build_addon(adsp.template TEMPLATE DEPLIBS)
 
