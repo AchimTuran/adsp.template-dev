@@ -19,9 +19,9 @@
  *
  */
 
-#include "kodi/libXBMC_addon.h"
-#include "kodi/libXBMC_adsp.h"
-#include "kodi/libXBMC_gui.h"
+#include <kodi/libXBMC_addon.h>
+#include <kodi/libXBMC_adsp.h>
+#include <kodi/libXBMC_gui.h>
 
 #include "util/XMLUtils.h"
 #include "util/util.h"
