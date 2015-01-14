@@ -24,6 +24,8 @@
  * \file DSPProcessor.cpp
  * ToDo: detailed description!
  */
+#include <string.h>
+
 #include "DSPProcessor.h"
 #include "channelUpmixer.h"
 

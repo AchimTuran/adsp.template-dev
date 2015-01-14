@@ -25,7 +25,7 @@
 #include <vector>
 #include <string>
 #include "include/client.h"
-#include "xbmc_adsp_dll.h"
+#include "kodi/xbmc_adsp_dll.h"
 #include "util/util.h"
 
 // include adsp template specific header files

@@ -10,7 +10,8 @@ find_package(kodi REQUIRED)
 find_package(kodiplatform REQUIRED)
 
 include_directories(${kodiplatform_INCLUDE_DIRS}
-                    ${PROJECT_SOURCE_DIR}/src)
+                    ${PROJECT_SOURCE_DIR}/src
+                    ${PROJECT_SOURCE_DIR}/src/template)
 
 set(TEMPLATE_SOURCES src/channelUpmixer.cpp
                      src/DSPProcessor.cpp

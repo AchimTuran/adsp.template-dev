@@ -26,6 +26,10 @@
 #include "configuration/templateConfiguration.h"
 #include "template/include/MACROHelper.h"
 
+#ifndef strcpy_s
+#define strcpy_s(dest, size, src) (strncpy((dest), (src), (size)))
+#endif
+
 using namespace std;
 using namespace ADDON;
 

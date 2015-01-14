@@ -3,7 +3,7 @@
  * \file templateConfiguration.cpp
  * ToDo: detailed description!
  */
-#pragma once
+
 /*
  *      Copyright (C) 2005-2014 Team XBMC
  *      http://xbmc.org
