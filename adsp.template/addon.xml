@@ -3,13 +3,13 @@
   id="adsp.template"
   version="0.0.1"
   name="Audio DSP Template"
-  provider-name="Team XBMC">
+  provider-name="Team KODI">
   <requires>
     <c-pluff version="0.1"/>
-    <import addon="xbmc.adsp" version="0.0.1"/>
+    <import addon="kodi.adsp" version="0.0.1"/>
   </requires>
   <extension
-    point="xbmc.adspaddon"
+    point="kodi.adsp"
     library_linux="adsp.template.so"
     library_osx="adsp.template.dylib"
     library_wingl="adsp.template.dll"
