@@ -1,7 +1,7 @@
 #pragma once
 /*
- *      Copyright (C) 2005-2014 Team XBMC
- *      http://xbmc.org
+ *      Copyright (C) 2005-2014 Team KODI
+ *      http://kodi.tv
  *
  *  This Program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -14,7 +14,7 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with XBMC; see the file COPYING.  If not, write to
+ *  along with KODI; see the file COPYING.  If not, write to
  *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  *  http://www.gnu.org/copyleft/gpl.html
  *
@@ -51,7 +51,7 @@
 #define ADSP_SETTINGS_FILE				"ADSPTemplateSettings.xml"
 //! If you define this, then your ADSP addon can read the saved settings.
 #define ADSP_ADDON_USE_READSETTINGS
-//! If you define this, then your ADSP addon can get settings from xbmc.
+//! If you define this, then your ADSP addon can get settings from kodi.
 #define ADSP_ADDON_USE_GETSETTINGS
 //! ToDo!
 #define ADSP_ADDON_USE_STOP
@@ -62,7 +62,7 @@
 //! If you define this, then your ADSP addon can have a settings GUI for processing modes.
 #define ADSP_ADDON_USE_MENUHOOK
 //! If you define this, then your ADSP addon can use a optional init method and 
-//! xbmc will call it when your ADSP is loaded the first time.
+//! kodi will call it when your ADSP is loaded the first time.
 #define ADSP_ADDON_USE_OPTIONAL_INIT
 
 

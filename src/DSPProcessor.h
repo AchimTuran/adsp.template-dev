@@ -1,7 +1,7 @@
 #pragma once
 /*
- *      Copyright (C) 2005-2014 Team XBMC
- *      http://xbmc.org
+ *      Copyright (C) 2005-2014 Team KODI
+ *      http://kodi.tv
  *
  *  This Program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -14,7 +14,7 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with XBMC; see the file COPYING.  If not, see
+ *  along with KODI; see the file COPYING.  If not, see
  *  <http://www.gnu.org/licenses/>.
  *
  */
@@ -114,7 +114,7 @@ public:
 
 	/*! 
 	 * @brief	Overloading the function and set output channels flags to the same value as input flags.
-	 *			So it will be possible to copy all channels with its own audio samples to XBMC's dsp system.
+	 *			So it will be possible to copy all channels with its own audio samples to KODI's dsp system.
 	 * @retval	Out_channel_present_flags the exact channel present flags after performed up-/downmix 
 	 *			for availible flags see AE_DSP_CHANNEL_PRESENT in xbmc_adsp_types.h
 	 * @return	The amount channels, when no up- or downmix should be performed always return -1. 
