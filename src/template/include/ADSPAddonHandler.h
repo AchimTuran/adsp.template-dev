@@ -20,7 +20,7 @@
  */
 
 #include <string>
-#include <kodi/xbmc_adsp_types.h>
+#include <kodi/kodi_adsp_types.h>
 
 #include "../configuration/templateConfiguration.h"
 #include "ADSPProcessorHandle.h"
@@ -72,7 +72,7 @@ public:
 	CADSPProcessorHandle *GetStream(AE_DSP_STREAM_ID Id);
 
 private:
-	//AE_DSP_SETTINGS           m_Settings;           /*!< @brief (required) the active XBMC audio settings */
+	//AE_DSP_SETTINGS           m_Settings;           /*!< @brief (required) the active KODI audio settings */
 	//AE_DSP_STREAM_PROPERTIES  m_Properties;
 	//int                       m_iStreamType;
 	//int                       m_iBaseType;

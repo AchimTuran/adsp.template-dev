@@ -1,22 +1,22 @@
-Source: xbmc-audiodsp-template
+Source: kodi-audiodsp-template
 Priority: extra
 Maintainer: wsnipex <wsnipex@xbmc.org>
-Build-Depends: debhelper (>= 8.0.0), cmake, xbmc-addon-dev, libxbmcplatform-dev, xbmc-audio-dev, libfftw3-dev, libsamplerate0-dev, doxygen
+Build-Depends: debhelper (>= 8.0.0), cmake, kodi-addon-dev, libkodiplatform-dev, kodi-audio-dev, libfftw3-dev, libsamplerate0-dev, doxygen
 Standards-Version: 3.9.2
 Section: libs
-Homepage: http://xbmc.org
+Homepage: http://kodi.tv
 
-Package: xbmc-audiodsp-template
+Package: kodi-audiodsp-template
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Audio DSP template for XBMC
+Description: Audio DSP template for KODI
  This contains a template for audio DSP addons
 
-Package: xbmc-audiodsp-template-dbg
+Package: kodi-audiodsp-template-dbg
 Section: debug
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: debug symbols for Audio DSP template for XBMC
+Description: debug symbols for Audio DSP template for KODI
  contains the debug symbols for xbmc-audiodsp-template
 

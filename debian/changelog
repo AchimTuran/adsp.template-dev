@@ -1,4 +1,4 @@
-xbmc-audiodsp-template (1.0.0-1~trusty) trusty; urgency=low
+kodi-audiodsp-template (1.0.0-1~trusty) trusty; urgency=low
 
   [ wsnipex ]
   * initial release

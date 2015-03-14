@@ -115,9 +115,9 @@ public:
 	/*! 
 	 * @brief	Overloading the function and set output channels flags to the same value as input flags.
 	 *			So it will be possible to copy all channels with its own audio samples to KODI's dsp system.
-	 * @retval	Out_channel_present_flags the exact channel present flags after performed up-/downmix 
-	 *			for availible flags see AE_DSP_CHANNEL_PRESENT in xbmc_adsp_types.h
-	 * @return	The amount channels, when no up- or downmix should be performed always return -1. 
+	 * @retval	Out_channel_present_flags the exact channel present flags after performed up-/downmix
+	 *			for availible flags see AE_DSP_CHANNEL_PRESENT in kodi_adsp_types.h
+	 * @return	The amount channels, when no up- or downmix should be performed always return -1
 	 *			This method returns always -1 by default.
 	 * @remarks Optional. Must be used and set if a channel up- or downmix is processed from the active master mode
 	 */

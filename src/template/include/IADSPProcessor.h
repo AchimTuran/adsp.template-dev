@@ -19,7 +19,7 @@
  *
  */
 
-#include <kodi/xbmc_adsp_types.h>
+#include <kodi/kodi_adsp_types.h>
 #include "../configuration/templateConfiguration.h"
 
 //!	This is the interface class and you must derive your processing class from this interface.
@@ -198,7 +198,7 @@ public:
 	 * If you wanna use this function then you have to overload it and
 	 * set your own channel flags.
 	 * @retval	Out_channel_present_flags the exact channel present flags after performed up-/downmix 
-	 *			for availible flags see AE_DSP_CHANNEL_PRESENT in xbmc_adsp_types.h
+	 *			for availible flags see AE_DSP_CHANNEL_PRESENT in kodi_adsp_types.h
 	 * @return	The amount channels, when no up- or downmix should be performed always return -1. 
 	 *			This method returns always -1 by default.
 	 * @remarks Optional. Must be used and set if a channel up- or downmix is processed from the active master mode
