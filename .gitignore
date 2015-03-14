@@ -1,5 +1,6 @@
 temp/
 Debug/
+build/
 *.opensdf
 *.sdf
 *.sln
