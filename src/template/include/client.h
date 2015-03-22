@@ -22,7 +22,7 @@
 
 #include <kodi/libXBMC_addon.h>
 #include <kodi/libKODI_adsp.h>
-#include <kodi/libKODI_gui.h>
+#include <kodi/libKODI_guilib.h>
 
 extern bool                          m_bCreated;
 extern std::string                   g_strUserPath;
